@@ -1,0 +1,12 @@
+# VS Code
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Dependencies (if added later)
+node_modules/
+
+# Environment variables
+.env
