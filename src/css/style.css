@@ -79,11 +79,34 @@ ul {
 }
 
 .logo {
-    font-size: 26px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
     font-weight: 800;
 }
 
-.logo span {
+.logo-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #3B82F6, #1D4ED8);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    box-shadow: 0 6px 18px rgba(59, 130, 246, 0.35);
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-mark {
+    transform: rotate(-6deg) scale(1.05);
+}
+
+.logo-text span {
     color: var(--accent-color);
 }
 

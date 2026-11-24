@@ -19,6 +19,8 @@
       rel="stylesheet"
     />
 
+    <link rel="icon" type="image/svg+xml" href="src/assets/favicon.svg">
+
     <!-- CSS -->
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
@@ -27,7 +29,10 @@
     <!-- Navbar -->
     <header class="header">
       <nav class="navbar container">
-        <a href="#home" class="logo"> Shahid<span>.</span> </a>
+        <a href="#home" class="logo" aria-label="Shahid - Home">
+          <span class="logo-mark">MS</span>
+          <span class="logo-text">Shahid<span>.</span></span>
+        </a>
 
         <!-- Mobile Menu Button -->
         <button
@@ -326,7 +331,6 @@ const developer = {
 
                   <a
                     href="https://github.com/0xcodeghost/online-food-ordering-systemm"
-                    
                     target="_blank"
                     rel="noopener noreferrer"
                     class="project-link"
@@ -492,13 +496,21 @@ const developer = {
       </div>
     </footer>
 
-
     <!-- Project Modal -->
-<div class="modal" id="project-modal" aria-hidden="true">
-
-    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-
-        <button class="modal-close" id="modal-close" aria-label="Close project details">&times;</button>
+    <div class="modal" id="project-modal" aria-hidden="true">
+      <div
+        class="modal-box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <button
+          class="modal-close"
+          id="modal-close"
+          aria-label="Close project details"
+        >
+          &times;
+        </button>
 
         <span class="project-category" id="modal-category"></span>
         <h3 id="modal-title"></h3>
@@ -509,14 +521,17 @@ const developer = {
 
         <div class="project-tech" id="modal-tech"></div>
 
-        <a id="modal-link" class="btn btn-primary"
-           href="#" target="_blank" rel="noopener noreferrer">
-            View on GitHub
+        <a
+          id="modal-link"
+          class="btn btn-primary"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View on GitHub
         </a>
-
+      </div>
     </div>
-
-</div>
 
     <!-- JavaScript -->
     <script src="src/js/script.js"></script>
